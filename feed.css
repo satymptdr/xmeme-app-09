@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    body{
+        background-color: #625e5e;
+        background-size: cover;    
+        /* background: url(../media/5.jpg) no-repeat center center fixed; */
+    }
+    h1{
+        text-align: center;
+        color: #f2dcb1;
+    }
+    h2{
+        text-align: center;
+        color: #f2dcb1;
+    }
+    .form1{ 
+        display: flex;
+        margin: 7px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #faeaea;
+    }
+   .container1{
+      
+      width: 100%;
+   }
+    .container1 h3{
+        margin: 7px;
+    }
+    .container1 h5{
+        margin: 5px;
+        padding-top: 6px;
+    }
+    
+    .box{
+        margin: 4px;
+        border-radius: 5px;
+        border: solid 2px darkgray;
+    }
+    .container1 input{  
+        background: none;
+        padding: 5px 5px;
+        border: none;
+        outline:none;
+        color: black;
+        /* width: 380px; */
+    }
+    .container2{ 
+        /* background-color: #eaeeb3; */
+        padding: 10px;
+        margin: 7px;
+        border: 2px solid black;
+        border-radius: 5px;
+
+    }
+    .img-box{    
+        width: 360px;
+        height: 500px;
+        margin: 22px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 20px;
+        /* left: 2%; */
+    }
+    #insert-img{
+        width: 365px;
+        padding-top: 32px;
+        height: 300px;;
+    }
+
+    .img-box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0%;
+        height: 32px;
+        background-color: #fff5f5;
+        opacity: 0.9;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font: 900 35vmin/50vh cookie, cursive;
+    }
+    h4{
+        text-align: center;
+        color: #9b5555;
+    }
+    #update-box{
+        background-color: gray;
+        height: 160px;
+        border-radius: 15px;
+        
+    }
+    
+    
+    .btn11{
+        color: white;
+    
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    margin: 4px;
+    margin-left: 135px;
+    padding: 0px 16px;
+    border: 3px solid darkgray;
+    border-radius: 6px;
+    font-size: 18px;
+    background: #169f92;
+    font-weight: bold;
+}
+   
+
+    .btn11:hover{
+        cursor: pointer;
+    }
+  
+   
+     input#name{
+        width: 100%;
+        border-radius: 3px;
+        height: 40px;
+
+    }
+     input#caption{
+        width: 100%;
+        border-radius: 3px;
+        height: 40px;
+    }
+     input#url{
+        width: 100%;
+        border-radius: 3px;
+        height: 40px;
+    }
+   
+    .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    .btn{
+        color: white;
+    cursor: pointer;
+    outline: none;
+    margin: 4px;
+    margin-left: 52px;
+    padding: 5px 37px;
+    border: 3px solid darkgray;
+    border-radius: 6px;
+    font-size: 20px;
+    background: #169f92;
+    font-weight: bold;
+    }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d5b0e601a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>XMeme Feed Page</title>
+    <link href="/static/feed.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <h1>XMeme</h1>
+    <div class="container1">
+        <form class="form1" action="/submit" method="post">
+            <h3>Insert Meme</h3>
+            <h5>Name:</h5>
+            <div class="box">
+                <input type="name" Name="name" id="name1" placeholder="Enter Your Name">
+            </div>
+            <h5>Caption:</h5>
+            <div class="box">
+                <input type="caption" Name="caption" id="caption1" placeholder="Enter Caption">
+            </div>
+            <h5>Url:</h5>
+            <div class="box">
+                <input type="url" Name="url" id="url1" placeholder="Enter Url">
+            </div>
+            <button class="btn">Submit</button>
+            
+        </form>
+    </div>
+    
+    
+
+    <div id="cont" class="container2">
+        <h2>Memes Feed </h2>
+        <%if (values.length>0 )%>
+            <%values.slice().reverse().forEach(function (value) {%>
+                
+                <div class="img-box">
+                    <figure>
+                        <div class="text">
+                            <h4> <i class="fa fa-info-circle"></i>
+                                <%=value.caption%> by <%=value.name%>
+                            </h4>
+                        </div>
+                        <img id="insert-img" src="<%=value.url%>" alt="some image" >
+                        <figcaption>
+                            <form class="form_2" action="/update" method="post">
+                                <div id="update-box">
+                                    <input type="text" name="name" id="name" placeholder="<%=value.name%>">
+                                    <input type="text" name="caption" id="caption" placeholder="Enter Caption..">
+                                    <input type="url" Name="url" id="url" placeholder="Enter Url">
+                                    <div class="update-btn"> <button class="btn11">Update</button></div>
+
+                                </div>
+                            </form>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <%})%>
+
+    </div>
+
+    </div>
+
+    </div>
+    
+</body>
+
+</html>
